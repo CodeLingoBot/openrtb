@@ -35,7 +35,7 @@ type Audio struct {
 
 type jsonAudio Audio
 
-// Validates the object
+// Validate validates the object
 func (a *Audio) Validate() error {
 	if len(a.Mimes) == 0 {
 		return ErrInvalidAudioNoMimes

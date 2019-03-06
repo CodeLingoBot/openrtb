@@ -37,7 +37,7 @@ type BidRequest struct {
 	Pmp *Pmp `json:"pmp,omitempty"` // DEPRECATED: kept for backwards compatibility
 }
 
-// Validates the request
+// Validate validates the request
 func (req *BidRequest) Validate() error {
 	if req.ID == "" {
 		return ErrInvalidReqNoID

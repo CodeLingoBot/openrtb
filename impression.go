@@ -48,7 +48,7 @@ func (imp *Impression) assetCount() int {
 	return n
 }
 
-// Validates the `imp` object
+// Validate validates the `imp` object
 func (imp *Impression) Validate() error {
 	if imp.ID == "" {
 		return ErrInvalidImpNoID
